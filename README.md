@@ -4,53 +4,6 @@ This project is a **foundational exploration of blockchain technology**, created
 
 ---
 
-## 📚 Theoretical Summary
-
-🔗 Blockchain Basics
-A blockchain is a distributed, decentralized digital ledger that records data across many computers, making it secure, transparent, and tamper-proof. Each record, or block, contains a batch of transactions or data, along with a hash of the previous block, ensuring continuity and immutability. Once data is recorded in a block and added to the chain, it’s nearly impossible to alter without changing every subsequent block across the network. Blockchains are maintained through consensus mechanisms like Proof of Work or Proof of Stake, which validate transactions and maintain network integrity without central control. This technology forms the backbone of cryptocurrencies but has far-reaching applications beyond finance.
-
-🌍 Real-Life Use Cases
-
-1. Supply Chain Management: Tracks goods at each step from origin to delivery, improving transparency and reducing fraud.
-2. Digital Identity Verification: Provides secure, tamper-proof identity credentials for online authentication, voting, and access control.
-
----
-
-📦 Block Anatomy
-
-Block Diagram
-+---------------------------------------------+
-| Index: 1                                    |
-| Timestamp: 2025-06-06 10:00:00              |
-| Data: "Transaction Data"                    |
-| Previous Hash: "0000a12b..."                |
-| Merkle Root: "f9e2b1..."                    |
-| Nonce: 325                                   |
-| Hash: "0000b34c..."                         |
-+---------------------------------------------+
-
-🧪 Merkle Root Explanation
-A Merkle root summarizes all transactions in a block. Transactions are hashed in pairs to form a tree structure, and the final single hash at the top is the Merkle root.
-Example: For transactions A, B, C, and D:
-Hash(A+B) → AB
-Hash(C+D) → CD
-Hash(AB+CD) → Merkle Root
-If any transaction changes (e.g., C to X), the root changes, signaling data tampering.
-
---- 
-
-🔐 Consensus Conceptualization
-Proof of Work (PoW)
-PoW requires miners to solve complex math puzzles using computational power. It secures the network by making it expensive to add fraudulent blocks. High energy consumption is its trade-off due to the intense calculations.
-
-Proof of Stake (PoS)
-PoS selects validators based on how much cryptocurrency they stake. Higher stake means a higher chance to validate blocks. It consumes less energy than PoW and reduces hardware requirements.
-
-Delegated Proof of Stake (DPoS)
-DPoS uses voting: coin holders elect a small group of trusted delegates to validate transactions. It's faster and more democratic, but centralization risk increases due to fewer validators.
-
----
-
 ## 💻 Project Structure
 
 ### 1. `MineableBlock.js`
