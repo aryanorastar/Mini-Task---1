@@ -1,6 +1,6 @@
 # Blockchain Fundamentals Project 🚀
 
-This project is a **foundational exploration of blockchain technology**, created as part of my learning journey in Computer Engineering. It combines both **theoretical understanding** and **hands-on simulation code** in JavaScript to showcase how key components of a blockchain work — especially **mining** and **consensus mechanisms** like PoW, PoS, and DPoS.
+This project is a **foundational exploration of blockchain technology**, created as part of my learning journey in BlockSeBlock Internship Program. It combines both **theoretical understanding** and **hands-on simulation code** in JavaScript to showcase how key components of a blockchain work — especially **mining** and **consensus mechanisms** like PoW, PoS, and DPoS.
 
 ---
 
@@ -75,15 +75,6 @@ while (this.hash.substring(0, difficulty) !== target) { ... }
 
 ---
 
-## 🕒 Timestamps (Worked Over Multiple Days)
-
-- **Day 1 (June 3, 2025):** Wrote initial block class and basic hash function.
-- **Day 2 (June 4, 2025):** Implemented mining logic and blockchain linking.
-- **Day 3 (June 5, 2025):** Developed consensus comparison logic (PoW, PoS, DPoS).
-- **Day 4 (June 6, 2025):** Cleaned up code, fixed bugs, added comments and learning notes.
-
----
-
 ## 📌 What I Learned
 
 - 🔐 How hashing and proof-of-work make blockchain secure.
@@ -96,11 +87,11 @@ while (this.hash.substring(0, difficulty) !== target) { ... }
 
 ## 📺 Resources I Used
 
-- [Simply Explained - YouTube](https://www.youtube.com/c/SimplyExplained)
-- [Andreas Antonopoulos’ Bitcoin videos](https://www.youtube.com/user/aantonop)
-- [Ethereum PoS Explained - Finematics](https://www.youtube.com/watch?v=4ePe2BzT4oA)
-- [Mozilla Developer Network (MDN)](https://developer.mozilla.org/)
-- [Hashing and Crypto by freeCodeCamp](https://www.freecodecamp.org/learn/)
+- [Simply Explained - YouTube](https://www.youtube.com/channel/UCnxrdFPXJMeHru_b4Q_vTPQ)
+- [Andreas Antonopoulos’ Bitcoin videos](https://www.youtube.com/channel/UCJWCJCWOxBYSi5DhCieLOLQ)
+- [Ethereum PoS Explained - Finematics](https://finematics.com/the-ethereum-merge-explained/#:~:text=The%20transition%20to%20PoS%20aims,before%20the%20Ethereum%20network%20launched.)
+- [Mozilla Developer Network (MDN)](https://developer.mozilla.org/en-US/)
+- [Hashing and Crypto by freeCodeCamp](https://www.freecodecamp.org/news/how-to-hash-passwords-with-bcrypt-in- nodejs/#:~:text=Hashing%20involves%20converting%20a%20given,value%20and%20facilitates%20the%20retrieval.)
 
 ---
 
@@ -136,11 +127,23 @@ It’s not just about code — it’s about the incentives that keep blockchains
 
 ## 🚀 To Run This Project
 
-1. Ensure you have Node.js installed.
-2. Clone the repo or paste the code in a file (e.g., `blockchain.js`)
-3. Run using:
+You need Node.js installed (tested on v20.19.0).
+
+Your project folder should contain these subfolders and scripts:
+
+- `blockchain_simulation.js/blockchain.js` — simulates blockchain basics
+- `mining_simulation.js/mining.js` — simulates mining in PoW
+- `consensus_demo.js/consensus.js` — main consensus demo comparing PoW, PoS, and DPoS
+
+Run all scripts sequentially using this command in your terminal (from project root):
+
 ```bash
-node blockchain.js
+echo "=== RUNNING BLOCKCHAIN SIMULATION ===" && \
+node blockchain_simulation.js/blockchain.js && \
+echo -e "\n\n=== RUNNING MINING SIMULATION ===" && \
+node mining_simulation.js/mining.js && \
+echo -e "\n\n=== RUNNING CONSENSUS MECHANISMS DEMO ===" && \
+node consensus_demo.js/consensus.js
 ```
 
 ---
